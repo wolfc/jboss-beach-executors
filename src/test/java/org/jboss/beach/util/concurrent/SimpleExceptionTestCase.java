@@ -76,7 +76,7 @@ public class SimpleExceptionTestCase {
             e.getCause().printStackTrace();
             final StackTraceElement[] where = e.getCause().getStackTrace();
             // ehr, probably very dependant upon implementation details
-            assertEquals(currentLine + 1, where[8].getLineNumber());
+            assertEquals(currentLine + 1, where[7].getLineNumber());
         }
     }
 }
